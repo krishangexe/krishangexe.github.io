@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+/* VARIABLES */
+
+:root {
+    /* FONT */
+    --FF: "Hanken Grotesk", sans-serif;
+    --FS: 18px;
+
+    /* COLORS PRIMARY */
+    --LIGHTRED: hsl(0, 100%, 67%);
+    --ORANGEYELLOW: hsl(39, 100%, 56%);
+    --GREENTEAL: hsl(166, 100%, 37%);
+    --COBALTBLUE: hsl(234, 85%, 45%);
+
+    /* COLORS GRADIENT */
+    --LIGHTSLATEBLUE: hsl(252, 100%, 67%);
+    --LIGHTROYALBLUE: hsl(241, 81%, 54%);
+
+    --VIOLETBLUE: hsla(256, 72%, 46%, 1);
+    --PERSIANBLUE: hsla(241, 72%, 46%, 0);
+
+    /* COLORS NEUTRAL */
+    --WHITE: hsl(0, 0%, 100%);
+    --PALEBLUE: hsl(221, 100%, 96%);
+    --LIGHTLAVENDER: hsl(241, 100%, 89%);
+    --DARKGRAYBLUE: hsl(224, 30%, 27%);
+}
+
+.wrap {
+    display: block;
+}
+
+html {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    background-color: black;
+}
+
+body {
+    background-color:white;
+    min-height: 80vh;
+    margin: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    display: flex;
+    /* align-items: center; */
+    background-color: white;
+    box-shadow: whitesmoke 5px 5px 20px;
+    border-radius: 20px;
+}
+
+.results {
+    background-image: linear-gradient(to bottom, var(--LIGHTSLATEBLUE), var(--LIGHTROYALBLUE));
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 2rem;
+    min-width: 16rem;
+}
+
+.results__score {
+    background-image: linear-gradient(var(--VIOLETBLUE), var(--PERSIANBLUE));
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    align-self: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.results__of100 {
+    font-size: 1rem;
+    color: lightgray;
+    padding-top: 0.1rem;
+}
+
+h3 {
+    padding-bottom: 1.5rem;
+}
+
+#results__performance-word {
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.results__percentile {
+    font-size: 0.75rem;
+    color: lightgray;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    min-width: 18rem;
+    padding: 2rem;
+}
+
+.summary__individual {
+    margin: 0.3rem;
+    padding: 0.7rem;
+    background-color: grey;
+    border-radius: 8px;
+
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+#reaction {
+    color: var(--LIGHTRED);
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+#memory {
+    color: var(--ORANGEYELLOW);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#verbal {
+    color: var(--GREENTEAL);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#visual {
+    color: var(--COBALTBLUE);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.summary__scores {
+    color: gray;
+    float: right;
+    font-size: 0.9rem;
+}
+
+.scores__bold {
+    font-size: 1rem;
+    color: black;
+}
+.summary__button {
+    background-color: var(--DARKGRAYBLUE);
+    color: var(--PALEBLUE);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    margin-top: 1.5rem;
+    border: none;
+}
